@@ -1,0 +1,37 @@
+{
+  "name": "spirit-of-kiro",
+  "version": "1.0.0",
+  "description": "AI-powered game with client (Vue) and server (Bun)",
+  "scripts": {
+    // Frontend (Vite + Vue)
+    "client:dev": "bun --cwd ./client run dev",
+    "client:build": "bun --cwd ./client run build",
+    "client:preview": "bun --cwd ./client run preview",
+    "client:deploy": "bun --cwd ./client run deploy",
+
+    // Backend (Bun)
+    "server:dev": "bun run ./server/launch.ts"
+  },
+  "devDependencies": {
+    // Frontend
+    "vite": "^5.0.0",
+    "vue": "^3.4.0",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "vite-plugin-vue-devtools": "^1.2.0",
+    "gh-pages": "^6.0.0",
+
+    // Backend
+    "@types/uuid": "^10.0.0",
+    "eslint": "^9.28.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.821.0",
+    "uuid": "^11.1.0",
+    "yaml": "^2.8.0"
+  },
+  "engines": {
+    "bun": "^1.0.0"
+  }
+}
+
